@@ -13,7 +13,7 @@ const Home = (props) => {
     <Grid>
       <Himg>
         <img
-          src="https://wallpapercave.com/wp/wp2003022.jpg"
+          src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/de2a4086105697.5d8f947f95953.jpg"
           
           alt="Welcome"
         ></img>
@@ -35,10 +35,10 @@ const Home = (props) => {
         <a href="/planner">  
           <CircleImageHolder>
             <img
-              src="https://cdn.dribbble.com/userupload/7572117/file/original-2a0c68b4fbe2476972c05eef6cc7685e.png?resize=1024x710"
+              src="https://cdn.dribbble.com/users/911415/screenshots/15726079/media/3116143ebeaa0f7234635823bcd3e946.png?resize=1000x750"
               alt="Circle Image 2"
             ></img>
-            <Description>"Just Tourify :)"</Description>
+            <Description>"Just Tripster :)"</Description>
           </CircleImageHolder>
           </a>
 
@@ -80,8 +80,8 @@ const Himg = styled.div`
   padding-top: 55px;
   margin-left: 0px;
   margin-right: 50px;
-  /* background-color: rgb(194, 51, 115); */
-  background-color: rgb(61, 131, 97);
+  background-color: rgb(194, 51, 115);
+  /* background-color: rgb(61, 131, 97); */
   /* background-color: rgb(127, 233, 222); */
   /* background-color: rgb(163, 210, 202); */
   /* background-color: rgb(255, 169, 82); */
@@ -101,8 +101,8 @@ const Himg = styled.div`
     justify-content: center;
     position: relative;
     margin-top: -50vw;
-    /* color: #ffccc4; */
-    color: #1C6758;
+    color: #ffccc4;
+    /* color: #1C6758; */
     /* color: #FFEBAD; */
     /* color: #E8DED2; */
     /* color: #EF5A5A; */
@@ -118,8 +118,8 @@ const Container = styled.div`
   width: 100%;
   border-radius: 10px;
   height: 55vh;
-  /* background-color: rgb(246, 99, 92); */
-  background-color: rgb(214, 205, 164);
+  background-color: rgb(246, 99, 92);
+  /* background-color: rgb(214, 205, 164); */
   /* background-color: rgb(255, 246, 191); */
   /* background-color: rgb(94, 170, 168); */
   /* background-color: rgb(255, 231, 154); */
@@ -152,7 +152,7 @@ const CircleImageHolder = styled.div`
 
     &:hover{
         transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        border: 5px solid #1C6758;
+        border: 5px solid #c23373;
     }
   }
 `;
@@ -161,14 +161,14 @@ const Description = styled.p`
   margin-top: 10px;
   text-align: center;
   font-size: 18px;
-  color: #1C6758;
+  color: #79155B;
   font-weight: bold;
   text-decoration: none;
 `;
 
 const Footer = styled.footer`
-  /* background-color: #FFBA86;  */
-  background-color: #EEF2E6;
+  background-color: #FFBA86; 
+  /* background-color: #EEF2E6; */
   /* background-color: #FFEBAD; */
   /* background-color: #056676; */
   /* background-color: #EF5A5A; */

@@ -577,7 +577,7 @@ const Bg = styled.div`
   width: 100%;
   padding-top: 20px;
   margin-left: 0px;
-  background-color: rgb(61, 131, 97);
+  background-color: rgb(194, 51, 115);
   border-radius: 10px;
   margin-bottom: 10vw;
 `;
@@ -597,20 +597,20 @@ const Wrap = styled.div`
   align-items: center;
   padding-top: 0;
   border-radius: 10px;
-  background-color:  rgb(214, 205, 164);
+  background-color:  rgb(255, 186, 134);
   cursor: pointer;
   width: 20vw;
   filter: ${({ blurBackground }) => (blurBackground ? 'blur(4px)' : 'none')};
   transition: filter 0.5s ease-in-out; /* Smooth transition */
   &:hover {
     transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    border: 5px solid #1c6758;
+    border: 5px solid #79155B;
   }
 
   p{
     text-align: justify;
     margin: 10px;
-    color: #1c6758;
+    color: #79155B;
     font-weight: bold;
   }
 
@@ -621,7 +621,7 @@ const Wrap = styled.div`
   }
 
   h2 {
-    color: #1c6758;
+    color: #79155B;
     text-align: center;
   }
 `;
@@ -638,7 +638,7 @@ const ExpandedContent = styled.div`
   padding-top: 0;
   margin-right: 300px;
   border-radius: 10px;
-  background-color: rgb(28, 103, 88, 0.6);
+  background-color: rgb(121, 21, 91, 0.5);
   cursor: pointer;
   width: 30vw;
   
@@ -668,7 +668,7 @@ const ExpandedWrittenContent = styled.div`
   padding-top: 0;
   /* margin-right: 300px; */
   border-radius: 10px;
-  background-color: rgb(28, 103, 88);
+  background-color: rgb(121, 21, 91);
   cursor: pointer;
   width: 20vw;
   height: 15vw;
@@ -729,8 +729,8 @@ const TouristTitle = styled.h3`
 `;
 
 const Footer = styled.footer`
-  /* background-color: #FFBA86;  */
-  background-color: #EEF2E6;
+  background-color: #FFBA86; 
+  /* background-color: #EEF2E6; */
   /* background-color: #FFEBAD; */
   /* background-color: #056676; */
   /* background-color: #EF5A5A; */
@@ -738,7 +738,7 @@ const Footer = styled.footer`
   padding: 20px;
   border-radius: 20px 20px 0 0; /* Top-left and top-right curved edges */
   text-align: center;
-  margin-top: 600vh;
+  margin-top: 560vh;
 `;
 
 export default India;

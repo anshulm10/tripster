@@ -87,14 +87,14 @@ const Nav = styled.nav`
   height: 60px;
   border: 1px solid;
   border-radius: 50px;
-  /* border-color: #c23373; */
-  border-color: #1C6758;
+  border-color: #c23373;
+  /* border-color: #1C6758; */
   /* border-color: #7FE9DE;  */
   /* border-color: #A3D2CA; */
   /* border-color: #C7FFD8; */
   /* border-color: #FFE79A; */
-  /* background-color: rgba(194, 51, 115, 0.5); */
-  background-color: ${(props) => (props.scrolling ? 'rgba(61, 131, 97)' : 'rgba(61, 131, 97, 0.0)')};
+  background-color: ${(props) => (props.scrolling ? 'rgba(194, 51, 115)' : 'rgba(194, 51, 115, 0.0)')};
+  /* background-color: ${(props) => (props.scrolling ? 'rgba(61, 131, 97)' : 'rgba(61, 131, 97, 0.0)')}; */
   /* background-color: rgb(127, 233, 222, 0.6); */
   /* background-color: rgb(163, 210, 202, 0.7); */
   /* background-color: rgb(255, 231, 154, 0.8); */

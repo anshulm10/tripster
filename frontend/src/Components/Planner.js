@@ -101,7 +101,7 @@ const InputFields = ({ setMapUrl, setSpotsUrl }) => {
             value={input.value}
             onChange={(event) => handleInputChange(index, event)}
           />
-          {inputs.length > 1 && <DeleteButton onClick={() => handleDeleteInput(index)}>❌</DeleteButton>}
+          {inputs.length > 1 && <DeleteButton onClick={() => handleDeleteInput(index)}>✖️</DeleteButton>}
         </InputWrapper>
       ))}
       {inputs.length < 10 && <AddButton onClick={handleAddInput}>+</AddButton>}
@@ -141,7 +141,7 @@ const AddButton = styled.button`
   margin-top: 10px;
   padding: 8px 12px;
   border-radius: 5px;
-  background-color: #1c6758;
+  background-color: #79155B;
   color: white;
   border: none;
   cursor: pointer;
@@ -151,7 +151,7 @@ const AddButton = styled.button`
 const DeleteButton = styled.button`
   padding: 4px 8px;
   border-radius: 50%;
-  background-color: rgb(214, 205, 164);
+  background-color: rgb(246, 99, 92);
   color: white;
   border: none;
   cursor: pointer;
@@ -161,7 +161,7 @@ const SubmitButton = styled.button`
   margin-top: 10px;
   padding: 8px 12px;
   border-radius: 5px;
-  background-color: #1c6758;
+  background-color: #79155B;
   color: white;
   border: none;
   cursor: pointer;
@@ -187,7 +187,7 @@ const Map = styled.div`
   padding-top: 55px;
   margin-left: 0px;
   margin-right: 50px;
-  background-color: rgb(61, 131, 97);
+  background-color: rgb(194, 51, 115);
   border-radius: 10px;
   img {
     position: relative;
@@ -202,7 +202,7 @@ const Container = styled.div`
   width: 100%;
   border-radius: 10px;
   height: auto;
-  background-color: rgb(214, 205, 164);
+  background-color: rgb(246, 99, 92);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,7 +213,7 @@ const Container = styled.div`
 `;
 
 const Footer = styled.footer`
-  background-color: #eef2e6;
+  background-color: #FFBA86; 
   color: white;
   padding: 20px;
   border-radius: 20px 20px 0 0;
