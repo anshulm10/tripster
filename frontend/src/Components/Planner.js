@@ -13,7 +13,15 @@ const Planner = (props) => {
           <h1>Plan Your Amazing Trip !</h1>
           <InputFields setMapUrl={setMapUrl} setSpotsUrl={setSpotsUrl}/>
         </Container>
-        <Map>
+        {/* <TempImg>
+        <img
+          src="https://cdn.dribbble.com/users/59947/screenshots/17006879/media/102a4edaac3eda5c7f1fc5d7e21a5b50.jpg?resize=1000x750&vertical=center"
+          
+          alt="Welcome"
+        ></img>
+        <span>Travel</span>
+      </TempImg> */}
+        <Map> 
           <iframe
             style={{width: "70vw", height: "65vw", borderRadius: '10px'}}
             allowfullscreen
@@ -209,6 +217,45 @@ const Container = styled.div`
   justify-content: center;
   h1 {
     font-family: "Quicksand", sans-serif;
+  }
+`;
+
+const TempImg = styled.div`
+  height: 160vh;
+  width: 100%;
+  padding-top: 55px;
+  margin-left: 0px;
+  margin-right: 50px;
+  background-color: rgb(194, 51, 115);
+  /* background-color: rgb(61, 131, 97); */
+  /* background-color: rgb(127, 233, 222); */
+  /* background-color: rgb(163, 210, 202); */
+  /* background-color: rgb(255, 169, 82); */
+  /* border: 1px solid;
+  border-color: #f6635c; */
+  border-radius: 10px;
+  img {
+    position: relative;
+    width: 90vw;
+    border-radius: 10px;
+    margin-top: -15px;
+  }
+  span {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -50vw;
+    color: #ffccc4;
+    /* color: #1C6758; */
+    /* color: #FFEBAD; */
+    /* color: #E8DED2; */
+    /* color: #EF5A5A; */
+    font-size: 5vw;
+    letter-spacing: 20px;
+    font-family: "Lora", serif;
+    z-index: 1;
   }
 `;
 

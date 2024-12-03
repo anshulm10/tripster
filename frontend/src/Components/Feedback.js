@@ -38,8 +38,8 @@ const Feedimg = styled.div`
     padding-top: 55px;
     margin-left: 0px;
     margin-right: 50px;
-    /* background-color: rgb(194, 51, 115); */
-    background-color: rgb(61, 131, 97);
+    background-color: rgb(194, 51, 115);
+    /* background-color: rgb(61, 131, 97); */
     /* background-color: rgb(127, 233, 222); */
     /* background-color: rgb(163, 210, 202); */
     /* background-color: rgb(255, 169, 82); */
@@ -60,8 +60,8 @@ const Feedimg = styled.div`
         justify-content: center;
         position: relative;
         margin-top: -45vw;
-        /* color: #ffccc4; */
-        color: #1C6758;
+        color: rgb(194, 51, 115);
+        /* color: #1C6758; */
         /* color: #FFEBAD; */
         /* color: #E8DED2; */
         /* color: #EF5A5A; */
@@ -76,8 +76,8 @@ const Container = styled.div`
   width: 100%;
   border-radius: 10px;
   height: 115vh;
-  /* background-color: rgb(246, 99, 92); */
-  background-color: rgb(214, 205, 164);
+  background-color: rgb(246, 99, 92);
+  /* background-color: rgb(214, 205, 164); */
   /* background-color: rgb(255, 246, 191); */
   /* background-color: rgb(94, 170, 168); */
   /* background-color: rgb(255, 231, 154); */
@@ -93,8 +93,8 @@ const Container = styled.div`
 `;
 
 const Footer = styled.footer`
-  /* background-color: #FFBA86;  */
-  background-color: #EEF2E6;
+  background-color: #FFBA86; 
+  /* background-color: #EEF2E6; */
   /* background-color: #FFEBAD; */
   /* background-color: #056676; */
   /* background-color: #EF5A5A; */
