@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import lord from "../Images/popo.jpg"
 
+
 // Main Theme - https://mir-s3-cdn-cf.behance.net/project_modules/hd/de2a4086105697.5d8f947f95953.jpg
 // Deep forrest theme - https://wallpapercave.com/wp/wp2003022.jpg
 // Beach theme - https://cdn.dribbble.com/users/63407/screenshots/17441772/media/f37e7f65ff37ee83e4e10a8183659fa2.png?resize=1000x750&vertical=center
