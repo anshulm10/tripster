@@ -5,10 +5,9 @@ import granthimg from "../Images/Granth.jpg"
 import ahanaimg from "../Images/Ahana.jpg"
 import anshulimg from "../Images/Anshul.jpg"
 import vamsiimg from "../Images/Vamsi.jpg"
-import omkarimg from "../Images/Omkar.jpg"
-import anishimg from "../Images/Anish.jpg"
-import shravimg from "../Images/Shravani.jpg"
-import abhayimg from "../Images/Abhay.jpg"
+import prashimg from "../Images/Prashant.jpg"
+import arjunimg from "../Images/Arjun.jpg"
+import samimg from "../Images/Samaksh.jpg"
 import placeholder from "../Images/placeholder.png"
 
 const About = (props) => {
@@ -30,53 +29,53 @@ const About = (props) => {
                 <CircleGridContainer>
                     <CircleImageHolder>
                         <img 
-                        src={placeholder}
+                        src={granthimg}
                         alt="Mr No Emo"
                         ></img>
                         <Description>
-                            <h2>Text</h2>
-                            <p>Text</p>
+                            <h2>Granth</h2>
+                            <p>Developer</p>
                         </Description>
                     </CircleImageHolder>
                     <CircleImageHolder>
                         <img 
-                        src={placeholder}
+                        src={anshulimg}
                         alt="Mr No Emo"
                         ></img>
                         <Description>
-                            <h2>Text</h2>
-                            <p>Text</p>
+                            <h2>Anshul</h2>
+                            <p>Developer</p>
                         </Description>
                     </CircleImageHolder>
                     <CircleImageHolder>
                         <img
                             // style={{width: "230px", height: "235px"}} 
-                            src={placeholder}
+                            src={samimg}
                             alt="Mr No Emo"
                         ></img>
                         <Description>
-                            <h2>Text</h2>
-                            <p>Text</p>
+                            <h2>Samaksh</h2>
+                            <p>Developer</p>
                         </Description>
                     </CircleImageHolder>
                     <CircleImageHolder>
                         <img 
-                        src={placeholder}
+                        src={prashimg}
                         alt="Mr No Emo"
                         ></img>
                         <Description>
-                            <h2>Text</h2>
-                            <p>Text</p>
+                            <h2>Prashant</h2>
+                            <p>Developer</p>
                         </Description>
                     </CircleImageHolder>
                     <CircleImageHolder>
                         <img 
-                            src={placeholder}
+                            src={arjunimg}
                             alt="Mr No Emo"
                         ></img>
                         <Description>
-                            <h2>Text</h2>
-                            <p>Text</p>
+                            <h2>Arjun</h2>
+                            <p>Researcher</p>
                         </Description>
                     </CircleImageHolder>
                 </CircleGridContainer>
@@ -211,8 +210,8 @@ const CircleImageHolder = styled.div`
   align-items: center;
   margin-top: 10px;
   img {
-    width: 230px;
-    height: 230px;
+    width: 210px;
+    height: 210px;
     border-radius: 50%;
     overflow: hidden;
     &:hover{

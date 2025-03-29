@@ -94,3 +94,78 @@ class Maps:
         area = quote_plus(central_addr[3]["long_name"])
         url = f"https://www.google.com/maps/embed/v1/search?key={self.apikey}&q={self.loc}+in+{street}+{area}&center={central[0]},{central[1]}&zoom=14"
         return url
+    
+    def get_hotels_nearby_v1(self):
+        """
+        Finds hotels around the central node using Google Places API v1
+        """
+        central = self.get_central_node()
+        lat, lng = central[0], central[1]
+        endpoint = "https://places.googleapis.com/v1/places:searchNearby"
+        payload = {
+            "includedTypes": ["lodging"],
+            "maxResultCount": 10,
+            "locationRestriction": {
+                "circle": {
+                    "center": {"latitude": lat, "longitude": lng},
+                    "radius": 5000  # 5 km radius
+                }
+            }
+        }
+
+        headers = {
+            "Content-Type": "application/json",
+            "X-Goog-Api-Key": self.apikey,
+            "X-Goog-FieldMask": "places.displayName,places.formattedAddress,places.rating,places.location"
+        }
+        response = requests.post(endpoint, json=payload, headers=headers)
+        hotels_data = response.json()
+        hotels_list = []
+        if "places" in hotels_data:
+            for hotel in hotels_data["places"]:
+                hotels_list.append({
+                    "name": hotel.get("displayName", {}).get("text", "N/A"),
+                    "address": hotel.get("formattedAddress", "N/A"),
+                    "rating": hotel.get("rating", "N/A"),
+                    "location": hotel.get("location", {})
+                })
+        return hotels_list
+
+    def get_places_nearby_by_type(self):
+            """
+            Finds places (restaurants, cafes, etc.) around the central node based on the type specified.
+            This function is only used if the user specifies a type other than lodging.
+            """
+            if not self.loc:
+                return []  # No type provided
+            # Use the user-specified type from self.loc
+            central = self.get_central_node()
+            lat, lng = central[0], central[1]
+            endpoint = "https://places.googleapis.com/v1/places:searchNearby"
+            payload = {
+                "includedTypes": [self.loc],
+                "maxResultCount": 10,
+                "locationRestriction": {
+                    "circle": {
+                        "center": {"latitude": lat, "longitude": lng},
+                        "radius": 5000  # 5 km radius
+                    }
+                }
+            }
+            headers = {
+                "Content-Type": "application/json",
+                "X-Goog-Api-Key": self.apikey,
+                "X-Goog-FieldMask": "places.displayName,places.formattedAddress,places.rating,places.location"
+            }
+            response = requests.post(endpoint, json=payload, headers=headers)
+            places_data = response.json()
+            places_list = []
+            if "places" in places_data:
+                for place in places_data["places"]:
+                    places_list.append({
+                        "name": place.get("displayName", {}).get("text", "N/A"),
+                        "address": place.get("formattedAddress", "N/A"),
+                        "rating": place.get("rating", "N/A"),
+                        "location": place.get("location", {})
+                    })
+            return places_list

@@ -17,6 +17,8 @@
     "@vis.gl/react-google-maps": "^0.10.0",
     "axios": "^0.27.2",
     "fs-react": "^0.0.4",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.0",
     "react": "^18.2.0",
     "react-axios": "^2.0.6",
     "react-collapsed": "^4.1.2",
