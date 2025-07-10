@@ -12,6 +12,7 @@ Your ultimate travel companion for crafting unforgettable adventures! Here at Tr
 ## Tech Stack
 ### Backend 
 **Language** - Python\
+**Gemini** - gemini-2.0-flash-exp\
 **Framework** - [Flask](https://flask.palletsprojects.com/en/3.0.x/api/) 
 
 ### Frontend 
